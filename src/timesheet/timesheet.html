@@ -1,0 +1,120 @@
+<div id="main-content ">
+  <aside class="col-md-2">
+    <div class="search">
+      <input type="text" id="filter" placeholder="Type your search" class="form-control filter"
+             aria-describedby="helpBlock" ng-model='filter'>
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </div>
+    <button class="btn btn-primary reset" ng-click="onReset()">Reset Search Filters</button>
+    <section>
+      <h2>Status</h2>
+      <label class="checkbox">
+        <input type="checkbox"> Label
+      </label>
+    </section>
+    <section>
+      <h2>Timecard Channel</h2>
+      <label class="checkbox">
+        <input type="checkbox"> Label
+      </label>
+    </section>
+    <section>
+      <h2>Manual Entry</h2>
+      <label class="checkbox">
+        <input type="checkbox"> Label
+      </label>
+    </section>
+  </aside>
+  <div class="main-content col-md-10">
+    <div class="branch-details-row">
+      <div class="col-md-7">
+        <div class="branch-details ">
+          <h1>Branch Description</h1>
+          <span class="branch-id">Branch Id</span>
+          <span class="total-records">Total Records: 000</span>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="export-action pull-right">
+          <span class="list-inline-item">Docs:</span>
+          <a class="list-inline-item" href="">Shared Folder</a>
+
+          <span class="list-inline-item">Export:</span>
+          <a class="list-inline-item" href="">Excel</a>
+        </div>
+      </div>
+    </div>
+    <div class="totals row">
+      <div class="col-md-3">
+        <div class="tile status-received" ng-click="onTotals('received')">
+          <span class="">received</span>
+          <span class="total-blurb">Received Records <a>View All</a></span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="tile status-expected" ng-click="onTotals('expected')">
+          <span class="">expected</span>
+          <span class="total-blurb">Expected Records <a>View All</a> </span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="tile status-error" ng-click="onTotals('failed')">
+          <span>failed</span>
+          <span class="total-blurb"> Failed Records <a>View All</a> </span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="tile status-isResolved" ng-click="onTotals('complete')">
+          <span class="">complete</span>
+          <span class="total-blurb">Complete <a>View All</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="bulk-action">
+
+      <div class="pull-right dropdown">
+        <label>Sort By </label>
+        <select class="form-control">
+          <option>label</option>
+        </select>
+      </div>
+    </div>
+    <ul class="heading list-inline row">
+
+
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('lastName')">Employee
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-2  list-inline-item" ng-click="changeSorting('customerName')">Client
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('assignmentNumber')">Assignment
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('assignmentStartDate')">Dates
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('timePoolCodeRows.payOverrideCode')">Code
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('timePoolCodeRows.payRegularUnits')">Units
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('timePoolCodeRows.payRegularRate')">Pay Rate
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item">Bill Rate
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+      <li class="col-md-1  list-inline-item" ng-click="changeSorting('weekEndingDate')">Weekending
+        <span ng-style="{'background-image': 'url(' + imgPathFilterColumn + ')'}" class="btn-filter-column"></span>
+      </li>
+    </ul>
+
+    <ul ng-repeat="timesheet in ts.timesheets" class="timesheet-list list-inline row" id="{{timesheet.assignmentNumber}}">
+      <timesheet-list timesheet="timesheet"></timesheet-list>
+    </ul>
+
+
+  </div>
+</div>

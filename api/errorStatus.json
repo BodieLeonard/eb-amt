@@ -1,0 +1,218 @@
+[
+  {
+    "id": 3,
+    "errorNumber": 92,
+    "description": "Account Not Approved",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 10,
+    "errorNumber": 99,
+    "description": "Account on Credit Hold",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 25,
+    "errorNumber": 115,
+    "description": "Accounting Unit Does Not Exist",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 2,
+    "errorNumber": 91,
+    "description": "Assignment Missing an Employee",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 4,
+    "errorNumber": 93,
+    "description": "Assignment Not Finalized",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 19,
+    "errorNumber": 109,
+    "description": "Bill-to location ends with 000",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 20,
+    "errorNumber": 110,
+    "description": "Branch On Assignment Is Different From Branch On Customer",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 18,
+    "errorNumber": 108,
+    "description": "Customer Inactive",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 21,
+    "errorNumber": 111,
+    "description": "Duplicate SSN",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 6,
+    "errorNumber": 95,
+    "description": "Have not completed customer gate or associate gate",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 27,
+    "errorNumber": 117,
+    "description": "Invalid Account",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 26,
+    "errorNumber": 116,
+    "description": "Invalid Date",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 24,
+    "errorNumber": 114,
+    "description": "Missing Customer",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 13,
+    "errorNumber": 103,
+    "description": "Missing DOB",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 22,
+    "errorNumber": 112,
+    "description": "Missing Employee",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 23,
+    "errorNumber": 113,
+    "description": "Missing Job Code",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 11,
+    "errorNumber": 101,
+    "description": "Missing or Bad Assignment",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 15,
+    "errorNumber": 105,
+    "description": "Missing or Bad Bill to location",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 9,
+    "errorNumber": 98,
+    "description": "Missing or Bad Pay Code",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 8,
+    "errorNumber": 97,
+    "description": "Missing or Bad Rates",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 14,
+    "errorNumber": 104,
+    "description": "Missing or Bad Worksite location",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 12,
+    "errorNumber": 102,
+    "description": "Missing SSN",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 16,
+    "errorNumber": 106,
+    "description": "Missing State Tax Data",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 7,
+    "errorNumber": 96,
+    "description": "No Time Received",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 1,
+    "errorNumber": 42,
+    "description": "Other",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 5,
+    "errorNumber": 94,
+    "description": "Pending Assignments",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  },
+  {
+    "id": 17,
+    "errorNumber": 107,
+    "description": "Third party employee assigned to non-third party assignment",
+    "active": true,
+    "createdBy": "lpm",
+    "updatedBy": "lpm"
+  }
+]

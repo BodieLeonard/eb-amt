@@ -1,0 +1,110 @@
+[
+  {
+    "id": "20100",
+    "description": "Lund OnSite",
+    "companyNumber": "180",
+    "properties": []
+  },
+  {
+    "id": "20101",
+    "description": "Valentine OnSite",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20102",
+    "description": "Yamaha OnSite",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20105",
+    "description": "Norcom OnSite",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20123",
+    "description": "Carter's VIP",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20125",
+    "description": "The Body Shop OnSite",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20204",
+    "description": "Indian Trail",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20206",
+    "description": "Restoration Onsite OH",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20813",
+    "description": "DENSO (SSP)",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20843",
+    "description": "Knoxville Republic Plastics",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20844",
+    "description": "XPO Logistics",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "20847",
+    "description": "Team 3 Chattanooga",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21006",
+    "description": "PD Kohler Dispatch WI",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21081",
+    "description": "PD Kohler Spartanburg SC",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21082",
+    "description": "PD Kohler Brownwood TX",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21083",
+    "description": "PD Kohler Hattiesburg MS",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21084",
+    "description": "PD Kohler Flower Mound TX",
+    "companyNumber": "123",
+    "properties": []
+  },
+  {
+    "id": "21085",
+    "description": "PD Kohler Huntsville AL",
+    "companyNumber": "123",
+    "properties": []
+  }
+]

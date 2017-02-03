@@ -1,0 +1,94 @@
+<div id="row-{{timesheet.reconStatus}}" class="time-row status status-{{timesheet.reconStatus}}"
+     id="extra-{{timesheet.assignmentNumber}}">
+  <li class="col-md-1 bulk-check">
+    <input class="" type="checkbox" [(ngModel)]="timesheet.isBulkSelected" />
+  </li>
+  <li class="col-md-1 list-inline-item">
+    <a href="{{crmUrl}}/main.aspx?etc=10012&id={{timesheet.employeeUuid}}&pagetype=entityrecord" target="_blank">{{ timesheet.employeeNumber }}</a>
+    <p>{{ timesheet.firstName }} {{ timesheet.lastName }}</p>
+  </li>
+  <li class="col-md-2 list-inline-item">
+    <a href="{{crmUrl}}/main.aspx?etc=10005&id={{timesheet.customerUuid}}&pagetype=entityrecord" target='_blank'>{{ timesheet.customerNumber }}</a>
+    <p>{{ timesheet.customerName }}</p>
+  </li>
+  <li class="col-md-1  list-inline-item">
+    <a href="{{crmUrl}}/main.aspx?etc=10005&id={{timesheet.assignmentUuid}}&pagetype=entityrecord" target="_blank">{{ timesheet.assignmentNumber }}</a> {{ timesheet.assignmentStatus }}
+  </li>
+  <li class="col-md-1  list-inline-item">
+    Start: {{ timesheet.assignmentStartDate  }} <br/> End: <span
+    *ngIf='timesheet.assignmentEndDate'>{{ timesheet.assignmentEndDate  }} </span>
+  </li>
+  <li class="col-md-1  list-inline-item" >
+    <div *ngIf="timesheet.timePoolCodeRows != null">
+      {{ timesheet.timePoolCodeRows.payOverrideCode }}<br/>
+      <a href="#" *ngIf="timesheet.timePoolCodeRows.length > 1">{{timesheet.timePoolCodeRows.length - 1}} More</a>
+    </div>
+  </li>
+  <li class="col-md-1 rates list-inline-item">
+    <div *ngIf="timesheet.timePoolCodeRows != null">
+      REG: {{ timesheet.timePoolCodeRows.payRegularUnits }}<br/> OT: {{ timesheet.timePoolCodeRows.billRegularUnits
+      }}<br/> DT: {{ timesheet.timePoolCodeRows.billRegularUnits }}
+    </div>
+  </li>
+  <li class="col-md-1 rates list-inline-item">
+    <div *ngIf="timesheet.timePoolCodeRows != null">
+      {{ timesheet.timePoolCodeRows.payRate }}<br/> {{ timesheet.timePoolCodeRows.payOtRate }}<br/> {{ timesheet.timePoolCodeRows.payDtRate
+      }}
+    </div>
+  </li>
+  <li class="col-md-1 rates list-inline-item">
+    <div *ngIf="timesheet.timePoolCodeRows != null">
+      {{ timesheet.timePoolCodeRows.billRegularRate }}<br/> {{ timesheet.timePoolCodeRows.billOtRate}}<br/> {{ timesheet.timePoolCodeRows.billDtRate}}
+    </div>
+  </li>
+  <li class="col-md-1 list-inline-item">
+    <p>{{ timesheet.weekEndingDate }}</p>
+  </li>
+  <li class="col-md-1  list-inline-item actions">
+
+    <span [ngSwitch]="timesheet.messagesIsRead" >
+      <a *ngSwitchCase="false" [ngStyle]="{'background-image': 'url(' + imgPathMessageActive + ')'}" class="btn message" (click)="onShowMessage(timesheet, $event)"></a>
+      <a *ngSwitchDefault [ngStyle]="{'background-image': 'url(' + imgPathMessage + ')'}" class="btn message" (click)="onShowMessage(timesheet, $event)"></a>
+    </span>
+
+    <span [ngSwitch]="timesheet.notesIsRead" >
+      <a *ngSwitchCase="false" [ngStyle]="{'background-image': 'url(' + imgPathNoteActive + ')'}" class="btn notes active" (click)="onShowNotes(timesheet, $event)"></a>
+      <a *ngSwitchDefault [ngStyle]="{'background-image': 'url(' + imgPathNote + ')'}" class="btn notes" (click)="onShowNotes(timesheet, $event)"></a>
+    </span>
+
+    <a [ngStyle]="{'background-image': 'url(' + imgPathDetails + ')'}" class="btn details" (click)="onShowDetails(timesheet)"></a>
+
+  </li>
+  <div id="extra-details-{{timesheet.assignmentNumber}}" class="extra-details col-md-12">
+    <span class="col-md-1 bulk-check"></span>
+    <span class="col-md-1 list-inline-item">
+        Created<strong>{{ timesheet.assignmentCreatedDate}}</strong>
+        Time Channel <strong>{{ timesheet.timecardChannel }}</strong>
+    </span>
+    <span class="col-md-2 list-inline-item">
+      Sick Pay Eligible: <b>{{ timesheet.sickPayEligible }}</b><br/>
+      Sick Pay Balance: <b>{{ timesheet.sickPayBalance }}</b><br/>
+      Sick Leave Eligible: <b>{{ timesheet.sickLeaveEligible }}</b><br/>
+      Sick Leave Balance: <b>{{ timesheet.sickLeaveBalance }}</b>
+    </span>
+
+    <span class="col-md-2 list-inline-item">
+        Department: <b>{{ timesheet.departmentName }}</b><br/>
+        Job Shift: <b>{{ timesheet.jobShift }}</b><br/>
+        Week Ending Day: <b>{{ timesheet.weekEndingDay }}</b><br/>
+        3rd Party: <b>{{ timesheet.thirdPartyEmployee}}</b><br/>
+        Billing Location: <b>{{ timesheet.billingLocation }}</b><br/>
+        Work Site Location: <b>{{ timesheet.worksitelocation }}</b>
+    </span>
+
+    <span class="col-md-2 list-inline-item">
+        Pay Code: <b>{{ timesheet.payCode }}</b><br/>
+        Code Desc: <b>{{ timesheet.payCodeDescription }}</b><br/>
+        Pay Cycle: <b>{{ timesheet.payCycle}}</b><br/>
+    </span>
+    <span class="col-md-2 list-inline-item">
+        OT Multiplier: <b>{{ timesheet.otMultiplier }}</b><br/>
+        DT Multiplier: <b>{{ timesheet.dtMultiplier }}</b>
+    </span>
+  </div>
+</div>
