@@ -7,7 +7,7 @@ function timesheetController($scope, timesheetService) {
 
   vm.pageTitle = 'Assignment Management Tool';
 
-  vm.baseUrl = '';
+  vm.baseUrl = '/';
   vm.sharedFolderUrl = '';
   vm.exportExcelUrl = '';
   vm.timesheets = [];

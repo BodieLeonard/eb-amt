@@ -1,4 +1,4 @@
-angular.module('HeadeDirective', []).directive('appHeader', appHeader);
+angular.module('HeaderDirective', []).directive('appHeader', appHeader);
 
 function appHeader() {
 

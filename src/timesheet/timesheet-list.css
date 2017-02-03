@@ -46,6 +46,7 @@
 
 .actions {
   min-width: 75px;
+  display: inline-block;
 }
 
 .actions a {
@@ -57,16 +58,17 @@
   background-position: center;
 }
 
-.actions .btn.notes {
+.actions .btn.btn-notes {
   width: 26px;
-  margin: 0 5px;
+  margin-left:5px;
+  margin-right:5px;
 }
 
 .actions .btn.active, .actions .btn:active {
   box-shadow: none;
 }
 
-actions .btn.notes.active {
+.actions .btn.btn-notes.active {
   top: -6px;
   position: relative;
   left: 2px;

@@ -1,15 +1,17 @@
 <div class="container home">
-  <h1>{{vm.pageTitle}}</h1>
+  <h1>{{home.pageTitle}}</h1>
   <div id="branches-search" class="search">
     <input type="text" id="filter" placeholder="Type branch name or number" class="form-control filter" aria-describedby="helpBlock">
     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
   </div>
   <div id="branches" class="branches">
     <ul id="branches-list">
-      <li class="col-md-3">
-        <h1>Branch Name</h1>
-        <p>Branch Number</p>
+
+      <li class="col-md-3" ng-repeat="branch in home.branches" ng-click="home.onBranchSelect(branch)">
+        <h1>{{branch.description}}</h1>
+        <p>{{branch.id}}</p>
       </li>
+      </ul>
     </ul>
   </div>
 </div>

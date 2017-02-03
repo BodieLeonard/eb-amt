@@ -6,8 +6,11 @@ angular.module('eb',
     'HeaderCtrl',
     'TimesheetCtrl',
     'TimesheetService',
+    'BranchesService',
     'TimesheetListDirective',
-    'HeadeDirective'
+    'HeaderDirective',
+    'AnimateService',
+    'MessagesDirective'
   ]);
 
 
@@ -21,9 +24,11 @@ angular.module('appRoutes', []).config(
           templateUrl: 'home/home.html',
           controller: 'homeController as home'
         })
-        .when('/branches', {
+        .when('/branch/:branchId', {
           templateUrl: 'timesheet/timesheet.html',
           controller: 'timesheetController as ts'
+
+
         })
       $locationProvider.html5Mode(true);
     }

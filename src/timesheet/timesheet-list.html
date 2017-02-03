@@ -43,17 +43,9 @@
   </li>
   <li class="col-md-1  list-inline-item actions">
 
-    <span [ngSwitch]="timesheet.messagesIsRead" >
-      <a *ngSwitchCase="false" [ngStyle]="{'background-image': 'url(' + imgPathMessageActive + ')'}" class="btn message" (click)="onShowMessage(timesheet, $event)"></a>
-      <a *ngSwitchDefault [ngStyle]="{'background-image': 'url(' + imgPathMessage + ')'}" class="btn message" (click)="onShowMessage(timesheet, $event)"></a>
-    </span>
-
-    <span [ngSwitch]="timesheet.notesIsRead" >
-      <a *ngSwitchCase="false" [ngStyle]="{'background-image': 'url(' + imgPathNoteActive + ')'}" class="btn notes active" (click)="onShowNotes(timesheet, $event)"></a>
-      <a *ngSwitchDefault [ngStyle]="{'background-image': 'url(' + imgPathNote + ')'}" class="btn notes" (click)="onShowNotes(timesheet, $event)"></a>
-    </span>
-
-    <a [ngStyle]="{'background-image': 'url(' + imgPathDetails + ')'}" class="btn details" (click)="onShowDetails(timesheet)"></a>
+      <a ng-style="{'background-image': 'url(' + imgPathMessageActive + ')'}" class="btn btn-message" ng-click="onShowMessage(timesheet)"></a>
+      <a ng-style="{'background-image': 'url(' + imgPathNoteActive + ')'}"    class="btn btn-notes" ng-click="onShowNotes(timesheet)"></a>
+      <a ng-style="{'background-image': 'url(' + imgPathDetails + ')'}"       class="btn btn-details" ng-click="onShowDetails(timesheet)"></a>
 
   </li>
   <div id="extra-details-{{timesheet.assignmentNumber}}" class="extra-details col-md-12">
