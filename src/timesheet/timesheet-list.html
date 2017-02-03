@@ -1,8 +1,5 @@
-<div id="row-{{timesheet.reconStatus}}" class="time-row status status-{{timesheet.reconStatus}}"
-     id="extra-{{timesheet.assignmentNumber}}">
-  <li class="col-md-1 bulk-check">
-    <input class="" type="checkbox" [(ngModel)]="timesheet.isBulkSelected" />
-  </li>
+<div id="row-{{timesheet.reconStatus}}" class="time-row status status-{{timesheet.reconStatus}}" id="extra-{{timesheet.assignmentNumber}}">
+
   <li class="col-md-1 list-inline-item">
     <a href="{{crmUrl}}/main.aspx?etc=10012&id={{timesheet.employeeUuid}}&pagetype=entityrecord" target="_blank">{{ timesheet.employeeNumber }}</a>
     <p>{{ timesheet.firstName }} {{ timesheet.lastName }}</p>

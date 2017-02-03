@@ -1,22 +1,12 @@
-.timesheet-list .time-row {
-  border-bottom: 1px solid #C4C1C1;
-  position: relative;
-  z-index: 1;
-  height: 70px;
-  display: block;
-  width: 100%;
-  background: white;
-
-}
-
-.timesheet-list .time-row:hover {
+.time-row:hover {
   background: rgba(0, 0, 0, .05);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.12);
+  -webkit-transition: background-color .24s ease-in-out;
   transition: background-color .24s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
-.timesheet-list .list-inline-item {
+.list-inline-item {
   padding: 0px;
   padding-left: 0;
   margin: 0;
@@ -28,37 +18,37 @@
   text-transform: capitalize;
 }
 
-.timesheet-list .list-inline-item strong {
+.list-inline-item strong {
   display: block;
   margin-bottom: 5px;
 }
 
-.timesheet-list .list-inline-item a {
+.list-inline-item a {
   display: block;
   text-decoration: underline;
   font-weight: 600;
 }
 
-.timesheet-list .bulk-check {
+.bulk-check {
   width: 35px;
   margin-left: 10px;
 }
 
-.timesheet-list .rates {
-  top: -8px;
+.rates {
+  top: 0px;
 }
 
-.timesheet-list .bulk-check input {
+.bulk-check input {
   top: 21px;
   left: -12px;
   position: relative;
 }
 
-.timesheet-list .actions {
+.actions {
   min-width: 75px;
 }
 
-.timesheet-list .actions a {
+.actions a {
   float: left;
   width: 25px;
   height: 25px;
@@ -67,16 +57,16 @@
   background-position: center;
 }
 
-.timesheet-list .actions .btn.notes {
+.actions .btn.notes {
   width: 26px;
   margin: 0 5px;
 }
 
-.timesheet-list .actions .btn.active, .timesheet-list .actions .btn:active {
+.actions .btn.active, .actions .btn:active {
   box-shadow: none;
 }
 
-.timesheet-list actions .btn.notes.active {
+actions .btn.notes.active {
   top: -6px;
   position: relative;
   left: 2px;
@@ -85,40 +75,41 @@
   box-shadow: none;
 }
 
-.timesheet-list .status,
-.timesheet-list .status-error,
-.timesheet-list .status-progress,
-.timesheet-list .status-isResolved,
-.timesheet-list .status-received,
-.timesheet-list .status-active,
-.timesheet-list .status-expected {
+.status,
+.status-error,
+.status-progress,
+.status-isResolved,
+.status-received,
+.status-active,
+.status-expected {
   border-left: 5px solid #C4C1C1;
   overflow: hidden;
+  padding-left: 20px;
 }
 
-.timesheet-list .status-error {
+.status-error {
   border-left-color: #F75E5E;
 }
 
-.timesheet-list .status-progress {
+.status-progress {
   border-left-color: #F5A623;
 }
 
-.timesheet-list .status-isResolved,
-.timesheet-list .status-complete {
+.status-isResolved,
+.status-complete {
   border-left-color: #7ED321;
 }
 
-.timesheet-list .status-expected {
+.status-expected {
   border-left-color: #F5A623;
 }
 
-.timesheet-list .status-received,
-.timesheet-list .status-active {
+.status-received,
+.status-active {
   border-left-color: #8FB0D5;
 }
 
-.timesheet-list .extra-details {
+.extra-details {
   transition: opacity .25s ease-in-out;
   opacity: 0;
   margin: 0;
