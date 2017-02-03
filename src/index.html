@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employbridge Assignment Management Tool</title>
+
+  <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <base href="/">
+</head>
+<body ng-app="eb" id="body" style="
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.25em;
+    background:rgba(216,216,216,.45);
+    padding:0;
+    ">
+
+
+<div>
+  <div id='main' class=''>
+    <app-header></app-header>
+    <ng-view>
+      <div class="page-header" style="
+      border-bottom: none;
+      position: relative;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24);
+      z-index: 10;
+      margin: 0;
+      padding: 0;
+      background: #0F4A8E;
+    ">
+        <h1 style="
+      text-transform: uppercase;
+      font-size: 130%;
+      padding: 26px 0 26px 25px;
+      font-weight: 700;
+      margin: 0;
+      color: white;
+    ">Timecard Management Tool</h1>
+      </div>
+      <div style="
+        margin:0 auto;
+        width:600px;
+        padding:40px;
+        font-size:36px;
+        text-transform: capitalize;
+        position: absolute;
+        top:20%;
+        left:50%;
+        margin-left:-300px;
+        font-weight: 100;
+        ">AMT
+      </div>
+    </ng-view>
+
+  </div>
+</div>
+
+
+<script src="./vendor/angular.min.js"></script>
+<script src="./vendor/angular-route.min.js"></script>
+<script src="./bundle.js"></script>
+</body>
+</html>
